@@ -1,0 +1,25 @@
+{
+  "name": "brothers-front",
+  "version": "1.0.0",
+  "description": "형길, 민규, 도검, 보근 프로젝트",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cross-env": "^7.0.3",
+    "next": "^10.0.7",
+    "next-redux-wrapper": "^6.0.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "redux-saga": "^1.1.3"
+  },
+  "devDependencies": {
+    "redux-devtools-extension": "^2.13.8"
+  }
+}
