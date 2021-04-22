@@ -5,7 +5,9 @@ const Index = () => {
     <h1>
       우아할 형제들
       <p>
-        <a href="/myPage">myPage</a>
+        <a href="/myPage">myPage</a><br/>
+        <a href="/listPage/list">list</a><br/>
+        <a href="/detail">detail</a><br/>
       </p>
     </h1>
   )
