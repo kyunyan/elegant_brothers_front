@@ -7,7 +7,7 @@ const Index = () => {
       <p>
         <a href="/myPage">myPage</a><br/>
         <a href="/listPage/list">list</a><br/>
-        <a href="/detail">detail</a><br/>
+        <a href="/detailPage/detailPage">detail</a><br/>
       </p>
     </h1>
   )

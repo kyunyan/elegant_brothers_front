@@ -3,6 +3,7 @@ import {Icon , Col, Card, Row} from 'antd';
 import Meta from 'antd/lib/card/Meta';
 
 function list(){
+-
 
     useEffect(() => {
        
@@ -29,6 +30,30 @@ function list(){
                         />
                     </Card>
                 </Col>    
+                <Col lg={6} md={8} xs={24}>
+                    <Card>
+                        <Meta
+                            title={'test1'}
+                            description={`$600`}
+                        />
+                    </Card>
+                </Col>    
+                <Col lg={6} md={8} xs={24}>
+                    <Card>
+                        <Meta
+                            title={'test2'}
+                            description={`$700`}
+                        />
+                    </Card>
+                </Col>
+                <Col lg={6} md={8} xs={24}>
+                    <Card >
+                        <Meta
+                            title={'test3'}
+                            description={`$800`}
+                        />
+                    </Card>
+                </Col>        
             </Row>
 
             <br/>

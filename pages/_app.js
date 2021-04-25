@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import wrapper from '../store/storeConfigure';
-import './../pages/css/common.css';
+import './../design/css/common.css';
 
 const Brothers = ({ Component }) => (
   <>
