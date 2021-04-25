@@ -23,10 +23,10 @@ function DetailProductPage(){
                 <Col lg={12} sm={24}>
                     {/* ProductInfo */}
                     <Descriptions title="Product Info">
-                        <Descriptions.Item label="Price">$500</Descriptions.Item>
-                        <Descriptions.Item label="Sold">안녕하세용</Descriptions.Item>
-                        <Descriptions.Item label="View">안녕하세용1</Descriptions.Item>
-                        <Descriptions.Item label="Description">감사합니다!!</Descriptions.Item>
+                        <Descriptions.Item label="가격">$500</Descriptions.Item>
+                        <Descriptions.Item label="안녕">안녕하세용</Descriptions.Item>
+                        <Descriptions.Item label="안녕1">안녕하세용1</Descriptions.Item>
+                        <Descriptions.Item label="설명">감사합니다!!</Descriptions.Item>
                     </Descriptions>
 
                     <br />
