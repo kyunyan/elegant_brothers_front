@@ -34,7 +34,7 @@ function DetailProductPage(){
                     <br />
                     <div style={{display : 'flex', justifyContent: 'center'}}>
                         <Button size='large' shape='round' type='danger' >
-                            Add to Cart
+                            담기
                         </Button>
                     </div>
 
