@@ -3,19 +3,19 @@ import {Icon , Col, Card, Row} from 'antd';
 import Meta from 'antd/lib/card/Meta';
 
 function list(){
--
+
 
     useEffect(() => {
-       
+
    }, [])
-   
-    
+
+
     return (
         <div style={{width: '75%' ,margin: '3rem auto'}}>
             <div style={{textAlign : 'center'}}>
                 <h2>List<Icon type="rocket"/></h2>
             </div>
-            
+
             {/* 조회부분 */}
             <div style={{display:'flex' , justifyContent: 'flex-end', margin: '1rem auto'}}>
             </div>
@@ -29,7 +29,7 @@ function list(){
                             description={`$500`}
                         />
                     </Card>
-                </Col>    
+                </Col>
                 <Col lg={6} md={8} xs={24}>
                     <Card>
                         <Meta
@@ -37,7 +37,7 @@ function list(){
                             description={`$600`}
                         />
                     </Card>
-                </Col>    
+                </Col>
                 <Col lg={6} md={8} xs={24}>
                     <Card>
                         <Meta
@@ -53,7 +53,7 @@ function list(){
                             description={`$800`}
                         />
                     </Card>
-                </Col>        
+                </Col>
             </Row>
 
             <br/>
@@ -61,7 +61,7 @@ function list(){
             <div style={{ display: 'flex', justifyContent: 'center'}}>
                 <button>더보기</button>
             </div>
-        </div>    
+        </div>
 
     )
 

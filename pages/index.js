@@ -1,15 +1,10 @@
 import React from 'react';
+import Header from "../components/common/Header";
 
 const Index = () => {
   return (
     <h1>
-      우아할 형제들
-      <p>
-        <a href="/myPage">myPage</a><br/>
-        <a href="/listPage/list">list</a><br/>
-        <a href="/detailPage/detailPage">detail</a><br/>
-        <a href="/cartPage/cartPage">cart</a><br/>
-      </p>
+      <Header />
     </h1>
   )
 }
