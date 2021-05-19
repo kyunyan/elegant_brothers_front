@@ -6,6 +6,7 @@ const CardWrap = styled.div`
   flex-direction: column;
   flex-wrap: wrap;
   width: 25%;
+  min-width: 25%;
   padding: 10px;
   position: relative;
   cursor: pointer;
@@ -32,17 +33,33 @@ const CardContents = styled.div`
     margin-bottom: 0;
   }
   
-  & p:last-child {
+  & span.product__sale-price{
+    padding-right: 8px;
+    font-weight: 800;
+    font-size: 16px;
+    color: #fa622f;
+    line-height: 20px;
+  }
+  
+  & p.product__price {
     font-size: 17px;
     font-weight: bold;
+    padding-top: 10px;
+  }
+  
+  & p.product__basic-price {
     padding-top: 5px;
+    font-size: 14px;
+    color: #999;
+    line-height: 18px;
+    text-decoration: line-through;
   }
 `
 
 const CardTitle = styled.p`
   font-size: 16px;
-  font-weight: 600;
-  padding-top: 5px;
+  padding-top: 15px;
+  line-height: 23px;
 `
 
 const Card = ({data}) => {
@@ -55,9 +72,22 @@ const Card = ({data}) => {
         <CardTitle>
           {data.productName}
         </CardTitle>
-        <p>
-          {data.price}원
-        </p>
+
+        {
+          data.salePrice
+            ?
+            <>
+              <p className="product__price">
+                <span className="product__sale-price">{data.salePrice}%</span>
+                {(Math.round(data.price - (data.price * data.salePrice / 100))).toLocaleString('ko-KR')}원
+              </p>
+              <p className="product__basic-price">{data.price.toLocaleString('ko-KR')}원</p>
+            </>
+            :
+            <>
+              <p className="product__price">{data.price.toLocaleString('ko-KR')}원</p>
+            </>
+        }
       </CardContents>
     </CardWrap>
   )
