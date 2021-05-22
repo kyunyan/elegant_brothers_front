@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Header from "../components/common/Header";
 import Carousel from "antd/lib/carousel";
 import Card from "../components/common/Card";
+import Layout from "../components/common/Layout";
 
 const MarketContainer = styled.div`
   width: 100%;
@@ -130,18 +131,10 @@ const Index = () => {
           }
         ]
       },
-      tagMenu: {
-        title: '태그별 추천',
-        type: 'tag',
-        data: [
-          ''
-        ]
-      }
     },
   }
   return (
-    <MarketContainer>
-      <Header />
+    <Layout>
       <CarouselWrap>
         <Carousel autoplay>
           <div>
@@ -168,7 +161,7 @@ const Index = () => {
           )
         })
       }
-    </MarketContainer>
+    </Layout>
   )
 }
 
