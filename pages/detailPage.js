@@ -43,6 +43,12 @@ function DetailProductPage(){
                     <br />
                     <div style={{display : 'flex', justifyContent: 'center'}}>
                         <Button size='large' shape='round' type='danger' >
+                            재입고알림
+                        </Button>
+                        <Button size='large' shape='round' type='danger' >
+                            늘사는것
+                        </Button>
+                        <Button size='large' shape='round' type='danger' >
                             담기
                         </Button>
                     </div>

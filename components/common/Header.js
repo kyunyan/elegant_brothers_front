@@ -90,13 +90,13 @@ const Header = () => {
           <a href="/myPage">myPage</a>
         </MenuItem>
         <MenuItem>
-          <a href="/listPage/list">list</a>
+          <a href="/listPage">list</a>
         </MenuItem>
         <MenuItem>
-          <a href="/detailPage/detailPage">detail</a>
+          <a href="/detailPage">detail</a>
         </MenuItem>
         <MenuItem>
-          <a href="/cartPage/cartPage">cart</a>
+          <a href="/cartPage">cart</a>
         </MenuItem>
       </Menu>
     </HeaderContainer>
